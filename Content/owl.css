@@ -1,0 +1,168 @@
+﻿.owl-carousel .animated {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+    z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+    z-index: 1;
+}
+.owl-carousel .fadeOut {
+    animation-name: fadeOut;
+}
+@keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+.owl-height {
+    transition: height 500ms ease-in-out 0s;
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.owl-carousel .owl-stage::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.owl-carousel .owl-stage-outer {
+    overflow: hidden;
+    position: relative;
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev, .owl-carousel .owl-controls .owl-nav .owl-next, .owl-carousel .owl-controls .owl-dot {
+    -moz-user-select: none;
+    cursor: pointer;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel.owl-loading {
+    display: block;
+    opacity: 0;
+}
+.owl-carousel.owl-hidden {
+    opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+    display: none;
+}
+.owl-carousel .owl-item {
+    -moz-user-select: none;
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+.owl-carousel.owl-text-select-on .owl-item {
+    -moz-user-select: auto;
+}
+.owl-carousel .owl-grab {
+    cursor: grab;
+}
+.owl-carousel.owl-rtl {
+    direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+    float: right;
+}
+.no-js .owl-carousel {
+    display: block;
+}
+.owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease 0s;
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+}
+.owl-carousel .owl-video-wrapper {
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    position: relative;
+}
+.owl-carousel .owl-video-play-icon {
+    background: rgba(0, 0, 0, 0) url("owl.video.play.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    position: absolute;
+    top: 50%;
+    transition: scale 100ms ease 0s;
+    width: 80px;
+    z-index: 1;
+}
+.owl-carousel .owl-video-play-icon:hover {
+}
+.owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon {
+    display: none;
+}
+.owl-carousel .owl-video-tn {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 400ms ease 0s;
+}
+.owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+}
+.owl-theme .owl-controls {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] {
+    background: #d6d6d6 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
+    background: #869791 none repeat scroll 0 0;
+    color: white;
+    text-decoration: none;
+}
+.owl-theme .owl-controls .owl-nav .disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #d6d6d6 none repeat scroll 0 0;
+    border-radius: 30px;
+    display: block;
+    height: 10px;
+    margin: 5px 7px;
+    transition: opacity 200ms ease 0s;
+    width: 10px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791 none repeat scroll 0 0;
+}
